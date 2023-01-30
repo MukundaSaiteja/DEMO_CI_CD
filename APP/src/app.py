@@ -7,18 +7,18 @@ def handle_request(payload):
 
     # Able to perform any operations on data
     result = sum(data["numbers"])
-   # result1 = min(data["numbers"])
-   # result2 = max(data["numbers"])
+    result1 = min(data["numbers"])
+    result2 = max(data["numbers"])
 
 
     # return the result as a JSON response
     response = {
         "result": result,
-        #"result1": result1,
-       # "result2": result2
+        "Min": result1,
+       "Max": result2
     }
     return json.dumps(response)
 
 
-payload = '{"numbers": [1, 2, 3]}'
+payload = '{"numbers": [1, 2, 3,4]}'
 print(handle_request(payload))

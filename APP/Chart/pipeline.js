@@ -13,7 +13,7 @@ module "cicd_pipeline" {
   container_tag = "v1.0"
   container_registry = "docker.io"
   kubernetes_namespace = "default"
-  kubernetes_service_name = "my-app-service"
+  kubernetes_service_name = "app-service"
   git_repository = "https://github.com/MukundaSaiteja/DEMO_CI_CD"
   git_branch = "master"
 }
